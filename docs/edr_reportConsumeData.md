@@ -17,7 +17,7 @@ POST https://api.arkreen.com/v1
 
 ```
 Content-Type: application/json
-token: xxxxxxx
+authorization: xxxxxxx
 ```
 
 
@@ -101,7 +101,7 @@ Except the [Common Error Codes](../Common/Types.md), this method has a lot of de
 
 | Code | Message                              | Meaning                         |
 | ---- | ------------------------------------ | ------------------------------- |
-| 1000 | get token failed | Failed to verify `token` |
-| 4002 | invalid clientId | Can't find `clientId` under the `token` |
+| 1000 | get token failed | Failed to verify `authorization` |
+| 4002 | invalid clientId | Can't find `clientId` under the `authorization` |
 | 4003 | invalid energy data | `energy` is smaller than the current value |
 

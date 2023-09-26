@@ -21,7 +21,7 @@ async function sendConsumeDataReport(power,energy) {
 
   var options = {
     method: 'POST',
-    headers: { "Content-Type": "application/json","token":Config.token },
+    headers: { "Content-Type": "application/json","authorization":Config.authorization },
     body: JSON.stringify(jsonRpc)
   };
 

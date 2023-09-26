@@ -10,7 +10,7 @@ If you want to become to a vender of Arkreen Consume Data, you need to satisfy t
 * You must be a business user, individual users are not supported.
 * You must have direct business cooperation with Arkreen Network.
 * You must have a growing cumulative electricity usage and report the consume data to Arkreen Network `24*7*365` manner.
-* You must obtain Arkreen Network authorization, including `token` and `clientId`.
+* You must obtain Arkreen Network authorization, including `authorization` and `clientId`.
 
 
 
@@ -20,7 +20,7 @@ If you want to become to a vender of Arkreen Consume Data, you need to satisfy t
 
 * Obtained authorization from Arkreen Network
     * Provide client name and register to Arkreen Network.
-    * Arkreen Network generates token and clientId .
+    * Arkreen Network generates authorization and clientId .
 * Using the Arkreen JSON RPC API to report consume data to Arkreen Network periodically
     * Must report the consume data every 3 minutes and each report includes `energy` and `power` .
     * For more information of consume data, please refer to: [edr_reportConsumeData](./docs/edr_reportConsumeData.md)
@@ -55,7 +55,7 @@ npm install
 
 * Using any text editor to open `consig.js` file
 * Change the `clientId` variable to your client id
-* Change the `token` variable to your token
+* Change the `authorization` variable to your authorization
 
 
 ## Run the application
