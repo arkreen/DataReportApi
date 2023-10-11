@@ -1,39 +1,46 @@
 # DataReportApi
-API and sample to used report data to Arkreen
 
-
+API and sample code be used by API Miner to report data to Arkreen.
 
 
 # Prerequisites
 
-If you want to become to a vender of Arkreen Consume Data, you need to satisfy the following requirements:
-* You must be a business user, individual users are not supported.
-* You must have direct business cooperation with Arkreen Network.
-* You must have a growing cumulative electricity usage and report the consume data to Arkreen Network `24*7*365` manner.
-* You must obtain Arkreen Network authorization, including `authorization` and `clientId`.
+You need the `authorization` and `clientId` to report data to Arkreen Network, please goto the [Arkreen](https://arkreen.com) website to find contact information of Arkreen and request `authorization` and `clientId` to get the permission to report data.
 
 
 
+# API Miner
+
+## API Miner Type
+
+There are 3 kinds API Miner so far:
+
+| Type                    | Description                                          |
+| ----------------------- | ---------------------------------------------------- |
+| Consumption             | A API Miner be used report energy consumption data   |
+| Generation              | A API Miner be used report energy generation data    |
+| Storage                 | A API Miner be used report energy storage data       |
 
 
-# API Miner Process Flow
+## Report Rules
 
-* Obtained authorization from Arkreen Network
-    * Provide client name and register to Arkreen Network.
-    * Arkreen Network generates authorization and clientId .
-* Using the Arkreen JSON RPC API to report consume data to Arkreen Network periodically
-    * Must report the consume data every 3 minutes and each report includes `energy` and `power` .
-    * For more information of consume data, please refer to: [edr_reportConsumeData](./docs/edr_reportConsumeData.md)
+Arkreen Network requires the API Miner to report data following these rules:
 
+| Rule                    | Description                                                                             |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| Report Interval         | A API Miner must report the real time data to Arkreen Network every 3 minutes at least. |
 
 
 
-# JSON RPC APIs for API Miner
+# JSON RPC APIs
 
-| API                                                      | Description                                                      |
-| -------------------------------------------------------- | ---------------------------------------------------------------- |
-| [edr_reportConsumeData](./docs/edr_reportConsumeData.md)       | JSON RPC API that be used to report consume data to Arkreen Network |
+Arkreen Network provides JSON RPC APIs to be used by API Miner:
 
+| API                                                            | Description                                                      |
+| -------------------------------------------------------------- | ---------------------------------------------------------------- |
+| [edr_reportConsumeData](./docs/edr_reportConsumeData.md)       | For API Miner to report energy consumption data.                 |
+| `edr_reportGenerationData`                                     | Coming soon...                                                   |
+| `edr_reportStorageData`                                        | Coming soon...                                                   |
 
 
 # Sample Code
