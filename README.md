@@ -38,7 +38,7 @@ Arkreen Network provides JSON RPC APIs to be used by API Miner:
 | API                                                            | Description                                                      |
 | -------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [edr_reportConsumeData](./docs/edr_reportConsumeData.md)       | For API Miner to report energy consumption data.                 |
-| edr_reportGenerationData                                       | Coming soon...                                                   |
+| edr_reportGenerationData                                       | For API Miner to report energy generation data.                  |
 
 
 # Sample Code
