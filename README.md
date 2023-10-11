@@ -39,8 +39,8 @@ Arkreen Network provides JSON RPC APIs to be used by API Miner:
 | API                                                            | Description                                                      |
 | -------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [edr_reportConsumeData](./docs/edr_reportConsumeData.md)       | For API Miner to report energy consumption data.                 |
-| `edr_reportGenerationData`                                     | Coming soon...                                                   |
-| `edr_reportStorageData`                                        | Coming soon...                                                   |
+| edr_reportGenerationData                                       | Coming soon...                                                   |
+| edr_reportStorageData                                          | Coming soon...                                                   |
 
 
 # Sample Code
@@ -61,8 +61,8 @@ npm install
 ## Config the client information
 
 * Using any text editor to open `consig.js` file
-* Change the `clientId` variable to your client id
-* Change the `authorization` variable to your authorization
+* Change the `clientId` variable to your **client id**
+* Change the `authorization` variable to your **authorization**
 
 
 ## Run the application
