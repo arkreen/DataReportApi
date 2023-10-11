@@ -4,7 +4,7 @@ const Config = require('./config');
 
 
 
-async function sendConsumeDataReport(power,energy) {
+async function sendConsumeDataReport(power, energy) {
   var url = Config.jsonRpcUrl;
   var method = Config.jsonRpcMethod_ConsumeData_Report;
 
@@ -13,15 +13,20 @@ async function sendConsumeDataReport(power,energy) {
     id: Date.now(),
     method: method,
     params: {
-      clientId:Config.clientId,
-      energy:energy,
-      power:power
+      clientId: Config.clientId,
+      energy: energy,
+      power: power
     }
+  };
+
+  var headers = { 
+    "Content-Type": "application/json",
+    "authorization": Config.authorization 
   };
 
   var options = {
     method: 'POST',
-    headers: { "Content-Type": "application/json","authorization":Config.authorization },
+    headers: headers,
     body: JSON.stringify(jsonRpc)
   };
 
@@ -38,16 +43,13 @@ async function sendConsumeDataReport(power,energy) {
 (function() {
 
   const reporter = async function() {
-
     //send the consume data report to Arkreen Network
     var result = await sendConsumeDataReport(1,1);
     console.log("transaction result", result);
 
     return result;
   };
-  setTimeout(async function() {
-    await reporter();
-  }, 1000 * 1);
+
   //send the consume data report every 3 minutes
   setInterval(async function() {
     await reporter();

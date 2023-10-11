@@ -17,9 +17,9 @@ There are 3 kinds API Miner so far:
 
 | Type                    | Description                                          |
 | ----------------------- | ---------------------------------------------------- |
-| Consumption             | A API Miner be used report energy consumption data   |
-| Generation              | A API Miner be used report energy generation data    |
-| Storage                 | A API Miner be used report energy storage data       |
+| Consumption             | API Miner be used report energy consumption data.    |
+| Generation              | API Miner be used report energy generation data.     |
+| Storage                 | API Miner be used report energy storage data.        |
 
 
 ## Report Rules
