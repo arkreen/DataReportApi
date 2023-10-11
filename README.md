@@ -5,7 +5,7 @@ API and sample code be used by API Miner to report data to Arkreen.
 
 # Prerequisites
 
-You need the `authorization` and `clientId` to report data to Arkreen Network, please goto the [Arkreen](https://arkreen.com) website to find contact information of Arkreen and request `authorization` and `clientId` to get the permission to report data.
+You need the `authorization` and `clientId` to report data to Arkreen Network, please goto the [Arkreen](https://arkreen.com) website to find contact information, for example: email, telegram or discord etc., then contact Arkreen core team to request the report data permissions.
 
 
 
@@ -45,7 +45,7 @@ Arkreen Network provides JSON RPC APIs to be used by API Miner:
 
 # Sample Code
 
-This sample code will send the consume data to Arkreen Network.
+This sample code will send the consumption data to Arkreen Network.
 
 The running environment of the sample is `Nodejs`, please goto [Nodejs Official Website](https://nodejs.org/en) to install.
 
@@ -76,4 +76,4 @@ When the application is running, consume data will be uploaded every 3 minutes, 
 
 # FAQ
 
-
+TODO
