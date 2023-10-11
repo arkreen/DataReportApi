@@ -43,11 +43,11 @@ authorization: Bearer 0x00000000000000000000000000000000000000000000000000000000
 
 The `params` is a `JavaScript` object, its field include:
 
-| Field          | Exists     | Type                           | Description                                            |
-| -------------- | ---------- | ------------------------------ | ------------------------------------------------------ |
-| `clientId`     | *required* | [`String`](./Types.md#String)  | Unique client Id that Arkreen issued to API Miner      |
-| `power`        | *required* | [`Number`](./Types.md#Number)  | Real-time power consumption, Unit: "mw"                |
-| `energy`       | *required* | [`Number`](./Types.md#Number)  | Cumulative power consumption, Unit: "mwh"              |
+| Field          | Exists     | Type                           | Description                                                         |
+| -------------- | ---------- | ------------------------------ | ------------------------------------------------------------------- |
+| `clientId`     | *required* | [`String`](./Types.md#String)  | Unique client Id that Arkreen issued to API Miner                   |
+| `power`        | *required* | [`Number`](./Types.md#Number)  | Real-time power consumption, Unit: **milliwatt**                    |
+| `energy`       | *required* | [`Number`](./Types.md#Number)  | Cumulative power consumption, Unit: **milliwatt hours**             |
 
 
 
@@ -62,8 +62,8 @@ The `params` is a `JavaScript` object, its field include:
 
 ```json
 {
-    "id": 2,
     "jsonrpc": "2.0",
+    "id": 1,
     "result": "OK"
 }
 ```
@@ -78,8 +78,8 @@ The `params` is a `JavaScript` object, its field include:
     "jsonrpc": "2.0",
     "id": 1,
     "error": {
-        "code": 1,
-        "message": "Internal Error"
+        "code": 1000,
+        "message": "Invalid authorization token"
     }
 }
 ```
@@ -92,7 +92,7 @@ Except the [Common Error Codes](../Common/Types.md), this method has a lot of de
 
 | Code | Message                              | Meaning                                                  |
 | ---- | ------------------------------------ | -------------------------------------------------------- |
-| 1000 | invalid authorization token          | Failed to verify `authorization`                         |
-| 4002 | invalid clientId                     | Can't find `clientId` under the `authorization`          |
-| 4003 | invalid energy data                  | `energy` is smaller than the current value               |
+| 1000 | Invalid authorization token          | Failed to verify `authorization`                         |
+| 4002 | Invalid clientId                     | Can't find `clientId` by the `authorization`             |
+| 4003 | Invalid energy data                  | `energy` is smaller than the current value               |
 

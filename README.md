@@ -27,7 +27,7 @@ Arkreen Network requires the API Miner to report data following these rules:
 
 | Rule                    | Description                                                                             |
 | ----------------------- | --------------------------------------------------------------------------------------- |
-| Report Interval         | A API Miner must report the real time data to Arkreen Network every 3 minutes at least. |
+| Report Interval         | API Miner must report the real time data to Arkreen Network every 3 minutes at least. |
 
 
 
@@ -74,4 +74,4 @@ When the application is running, consume data will be uploaded every 3 minutes, 
 
 # FAQ
 
-TODO
+TODO.
