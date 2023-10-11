@@ -13,13 +13,12 @@ You need the `authorization` and `clientId` to report data to Arkreen Network, p
 
 ## API Miner Type
 
-There are 3 kinds API Miner so far:
+There are 2 kinds API Miner so far:
 
 | Type                    | Description                                          |
 | ----------------------- | ---------------------------------------------------- |
 | Consumption             | API Miner be used report energy consumption data.    |
 | Generation              | API Miner be used report energy generation data.     |
-| Storage                 | API Miner be used report energy storage data.        |
 
 
 ## Report Rules
@@ -40,7 +39,6 @@ Arkreen Network provides JSON RPC APIs to be used by API Miner:
 | -------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [edr_reportConsumeData](./docs/edr_reportConsumeData.md)       | For API Miner to report energy consumption data.                 |
 | edr_reportGenerationData                                       | Coming soon...                                                   |
-| edr_reportStorageData                                          | Coming soon...                                                   |
 
 
 # Sample Code
